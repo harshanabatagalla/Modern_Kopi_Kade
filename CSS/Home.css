@@ -70,16 +70,6 @@ header {
     
 }
 
-.cups {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.cup-img {
-    width: 30%;
-    height: auto;
-}
-
 .home {
     margin: 0;
     background-image: url("../elements/Home.jpg");
@@ -114,7 +104,6 @@ header {
     font-family: Lucida Handwriting;
     color: #cd853f;
     display: block;
-    
 }
 
 .tagline{
@@ -155,18 +144,44 @@ header {
 
 .about-us {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    column-gap: 10px;
     margin: 10px;
-    font-family: "poppins";
-    font-size: 25px;
-    color: #191919;
-    font-weight: 100;
     text-align: center;
 }
 
-.content-para {
-    margin: 20px 100px 20px 100px;
+.sub-heading{
+    grid-area: 1 / 1 / 2 / 4;
+    margin-bottom: 20px;
+}
+.sub-heading-txt{
+    font-family: "poppins";
+    font-size: 30px;
     color: #191919;
-    font-size: 18px;
+}
+
+.content-para{
+    grid-row: span 3;
+    grid-column: 1/ 3 ;
+}
+.about-us-img{
+    grid-row: span 3;
+    grid-column: 3/ 4 ;
+    justify-self: center;
+    align-self: center;
+    max-width: 400px;
+
+}
+.cup-img {
+    width:100%;
+    height: auto;
+}
+
+.content-para-txt {
+    margin: 0px 50px 0px 50px;
+    color: #444444;
+    font-size: 1rem;
     font-family: "montserrat";
     text-align: justify; 
     font-weight: 300;   
@@ -181,9 +196,6 @@ header {
     }
 }
 
-.sub-heading{
-
-}
 
 @media screen and (max-width: 460px) {
     .navbar {
