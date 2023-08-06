@@ -1,0 +1,266 @@
+body {
+    background-color: #d3d3d3;
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a shadow to the header */
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    background-color: #2f2c28;
+    overflow: hidden;
+}
+
+.navbar-list-item {
+    padding: 0px 10px 0px 10px;
+
+}
+
+.navbar-list-item-logo {
+    padding: 0px 10px 0px 10px;
+    font-family: Lucida Handwriting;
+    color: #cd853f;
+    font-size: 20px;
+    float: left;
+}
+
+.navbar-list-item a {
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    font-family: "poppins";
+    color: white;
+    display: block;
+    float: left;
+
+}
+
+.navbar-list-item a:hover {
+    color: #cd853f;
+}
+
+.navbar-list-item input {
+    float: right;
+}
+
+.sign-in {
+    color: #cd853f;
+    font-weight: 600;
+    font-family: "poppins";
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px;
+    width: 75px;
+    cursor: pointer;
+}
+
+.sign-in:hover {
+    background-color: #cd853f;
+    color: #2f2c28;
+}
+
+.container {
+    
+}
+
+.cups {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cup-img {
+    width: 30%;
+    height: auto;
+}
+
+.home {
+    margin: 0;
+    background-image: url("../elements/Home.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+    height: 100vh;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the alpha (last value) for darkness */
+}
+
+.intro{
+    z-index: 1;
+    animation: floatAnimation 2s ease ;
+    text-align: center;
+}
+
+.logo-intro{
+    font-family: Lucida Handwriting;
+    color: #cd853f;
+    display: block;
+    
+}
+
+.tagline{
+    font-size: 40px;
+    font-family: "Black Jack";
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+}
+
+.heading {
+    font-family: "Lora SemiBold";
+    font-size: 75px;
+    margin: 0px;
+    color: #fff;
+    font-weight: 100;
+
+}
+
+.btn-menu{
+    width: 165px;
+    margin: 25px;
+    height: 55px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    font-family: "poppins";
+    font-size: 32px;
+}
+
+.btn-menu:hover{
+    border: 3px solid #cd853f;
+    cursor: pointer;
+    color: #cd853f;
+}
+
+.about-us {
+    display: grid;
+    margin: 10px;
+    font-family: "poppins";
+    font-size: 25px;
+    color: #191919;
+    font-weight: 100;
+    text-align: center;
+}
+
+.content-para {
+    margin: 20px 100px 20px 100px;
+    color: #191919;
+    font-size: 18px;
+    font-family: "montserrat";
+    text-align: justify; 
+    font-weight: 300;   
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.sub-heading{
+
+}
+
+@media screen and (max-width: 460px) {
+    .navbar {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 5px;
+        background-color: #2f2c28;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .navbar-list-item-logo {
+        padding: 5px 0;
+        font-family: Lucida Handwriting;
+        color: #cd853f;
+        font-size: 25px;
+        float: none;
+        display: block;
+    }
+    
+    .navbar-list-item a {
+        text-decoration: none;
+        font-family: "poppins";
+        color: white;
+        display: block;
+        float: none;
+        background-color: #191919;
+        margin: 1px;
+        
+    }
+    
+    .navbar-list-item input {
+        float: none;
+        margin: 5px;
+    }
+    
+    .sign-in {
+        color: #cd853f;
+        font-weight: 600;
+        font-family: "poppins";
+        padding: 5px;
+        border-radius: 20px;
+        border: 2px;
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    .content-para {
+        margin: 20px;
+        font-size: 12px;
+    }
+    
+    .tagline{
+        font-size: 25px;
+    }
+    
+    .heading {
+        font-size: 45px;
+        margin: 0px;
+    }
+    
+    .home{
+        height: 500px;
+    }
+}
+
+.btn-menu{
+    width: 130px;
+    margin: 0px;
+    height: 40px;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+    .content-para {
+        margin: 20px;
+        text-align: justify;
+    }
+}
