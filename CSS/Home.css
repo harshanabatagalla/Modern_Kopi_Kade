@@ -15,7 +15,7 @@ header {
     list-style-type: none;
     margin: 0;
     padding: 15px;
-    background-color: #2f2c28;
+    background-color: #191919;
     overflow: hidden;
 }
 
@@ -66,9 +66,7 @@ header {
     color: #2f2c28;
 }
 
-.container {
-    
-}
+.container {}
 
 .home {
     margin: 0;
@@ -79,8 +77,10 @@ header {
     background-position: center center;
     width: 100%;
     display: flex;
-    align-items: center; /* Vertically center items */
-    justify-content: center; /* Horizontally center items */
+    align-items: center;
+    /* Vertically center items */
+    justify-content: center;
+    /* Horizontally center items */
     height: 100vh;
 }
 
@@ -91,22 +91,23 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust the alpha (last value) for darkness */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Adjust the alpha (last value) for darkness */
 }
 
-.intro{
+.intro {
     z-index: 1;
-    animation: floatAnimation 2s ease ;
+    animation: floatAnimation 2s ease;
     text-align: center;
 }
 
-.logo-intro{
+.logo-intro {
     font-family: Lucida Handwriting;
     color: #cd853f;
     display: block;
 }
 
-.tagline{
+.tagline {
     font-size: 40px;
     font-family: "Black Jack";
     margin: 20px;
@@ -124,7 +125,7 @@ header {
 
 }
 
-.btn-menu{
+.btn-menu {
     width: 165px;
     margin: 25px;
     height: 55px;
@@ -136,7 +137,7 @@ header {
     font-size: 32px;
 }
 
-.btn-menu:hover{
+.btn-menu:hover {
     border: 3px solid #cd853f;
     cursor: pointer;
     color: #cd853f;
@@ -152,30 +153,33 @@ header {
     text-align: center;
 }
 
-.sub-heading{
+.sub-heading {
     grid-area: 1 / 1 / 2 / 4;
     margin-bottom: 20px;
 }
-.sub-heading-txt{
+
+.sub-heading-txt {
     font-family: "poppins";
     font-size: 30px;
     color: #191919;
 }
 
-.content-para{
+.content-para {
     grid-row: span 3;
-    grid-column: 1/ 3 ;
+    grid-column: 1/ 3;
 }
-.about-us-img{
+
+.about-us-img {
     grid-row: span 3;
-    grid-column: 3/ 4 ;
+    grid-column: 3/ 4;
     justify-self: left;
     align-self: center;
     max-width: 450px;
 
 }
+
 .cup-img {
-    width:100%;
+    width: 100%;
     height: auto;
 }
 
@@ -184,11 +188,11 @@ header {
     color: #444444;
     font-size: 1rem;
     font-family: "montserrat";
-    text-align: justify; 
-    font-weight: 300;   
+    text-align: justify;
+    font-weight: 300;
 }
 
-.branches{
+.branches {
     background-image: url("../elements/branches_back.jpg");
     position: relative;
     background-size: cover;
@@ -201,42 +205,154 @@ header {
     margin-top: 20px;
 }
 
-.sub-heading-txt-branches{
+.sub-heading-txt-branches {
     font-family: "poppins";
     font-size: 40px;
     color: #191919;
     margin: 0px;
 
 }
-.branches-locations{
+
+.branches-locations {
     font-family: "montserrat";
     font-size: 18px;
     color: #191919;
     margin: 30px 100px;
 }
-.branches-bottom{
+
+.branches-bottom {
     font-family: "Garamond";
     font-size: 25px;
     color: #191919;
     margin: 60px 100px 20px 100px;
 }
 
-footer{
-    background-color: #2f2c28;
+footer {
+    background-color: #191919;
     display: grid;
-    grid-template-rows: repeat(4,1fr);
-    grid-template-columns: repeat(4,1fr);
-    grid-auto-flow: row;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    column-gap: 5px;
+    margin-top: 30px;
+    padding: 50px 0px;
 }
 
-.footer-logo-text{
-    
+.footer-logo {
+    grid-row: 1/4;
+    grid-column: 1/2;
+    column-gap: 5px;
+    margin: 50px;
+    text-align: center;
 }
+
+.footer-logo-text {
+    font-family: Lucida Handwriting;
+    color: #cd853f;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-logo-tagline {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Black Jack";
+}
+
+.more-info-head {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    text-align: left;
+    color: #fff;
+    font-size: 25px;
+    font-family: "Garamond";
+
+    margin: 10px 0px;
+}
+
+.more-info-links {
+    grid-row: 2/4;
+    grid-column: 2/3;
+    color: #fff;
+    font-size: 13px;
+    font-family: "Poppins";
+    font-weight: 200;
+}
+
+.more-info-links a {
+    color: #cd853f;
+    font-size: 12px;
+    font-family: "Poppins";
+    font-weight: 300;
+}
+
+.find-us-head {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    text-align: left;
+    color: #fff;
+    font-size: 25px;
+    font-family: "Garamond";
+
+    margin: 10px 0px;
+}
+
+.find-us-links {
+    align-items: center;
+    grid-row: 2/4;
+    grid-column: 3/4;
+    padding: auto;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.footer-about-head {
+    grid-row: 1/2;
+    grid-column: 4/5;
+    text-align: left;
+    color: #fff;
+    font-size: 25px;
+    font-family: "Garamond";
+
+    margin: 10px 0px;
+}
+
+.footer-about-txt {
+    grid-row: 2/4;
+    grid-column: 4/5;
+    color: #fff;
+    font-size: 13px;
+    font-family: "Poppins";
+    font-weight: 200;
+    align-self: flex-start;
+    padding: 5px;
+}
+
+.copyright{
+    border-top: 2px solid #444444;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    font-family: "Poppins";
+    margin-bottom: 30px;
+    padding: 5px 0px;
+    background-color: #191919;
+
+
+}
+
 
 @keyframes floatAnimation {
     0% {
         transform: translateY(-50px);
     }
+
     100% {
         transform: translateY(0px);
     }
@@ -254,7 +370,7 @@ footer{
         overflow: hidden;
         text-align: center;
     }
-    
+
     .navbar-list-item-logo {
         padding: 5px 0;
         font-family: Lucida Handwriting;
@@ -263,7 +379,7 @@ footer{
         float: none;
         display: block;
     }
-    
+
     .navbar-list-item a {
         text-decoration: none;
         font-family: "poppins";
@@ -272,14 +388,14 @@ footer{
         float: none;
         background-color: #191919;
         margin: 1px;
-        
+
     }
-    
+
     .navbar-list-item input {
         float: none;
         margin: 5px;
     }
-    
+
     .sign-in {
         color: #cd853f;
         font-weight: 600;
@@ -290,27 +406,27 @@ footer{
         width: 100%;
         cursor: pointer;
     }
-    
+
     .content-para {
         margin: 20px;
         font-size: 12px;
     }
-    
-    .tagline{
+
+    .tagline {
         font-size: 25px;
     }
-    
+
     .heading {
         font-size: 45px;
         margin: 0px;
     }
-    
-    .home{
+
+    .home {
         height: 500px;
     }
 }
 
-.btn-menu{
+.btn-menu {
     width: 130px;
     margin: 0px;
     height: 40px;
@@ -323,18 +439,18 @@ footer{
         text-align: justify;
     }
 
-    .about-us-img{
+    .about-us-img {
         grid-row: 2 / 3;
-        grid-column: 1/ 4 ;
+        grid-column: 1/ 4;
         justify-self: center;
         align-self: center;
         max-width: 350px;
-    
+
     }
 
-    .content-para{
+    .content-para {
         grid-row: 3/5;
-        grid-column: 1/ 4 ;
+        grid-column: 1/ 4;
     }
 
     .content-para-txt {
@@ -342,15 +458,16 @@ footer{
         color: #444444;
         font-size: 1rem;
         font-family: "montserrat";
-        text-align: justify; 
-        font-weight: 300;   
+        text-align: justify;
+        font-weight: 300;
     }
 
-    .branches-locations{
+    .branches-locations {
         margin: 30px 20px;
         text-align: justify;
     }
-    .branches-bottom{
+
+    .branches-bottom {
         margin: 60px 20px 20px 20px;
     }
 
