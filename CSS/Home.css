@@ -244,7 +244,7 @@ footer {
     grid-row: 1/4;
     grid-column: 1/2;
     column-gap: 5px;
-    margin: 50px;
+    margin: 30px;
     text-align: center;
 }
 
@@ -311,6 +311,11 @@ footer {
     height: 50px;
     cursor: pointer;
 }
+.social-icon:hover {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
 
 .footer-about-head {
     grid-row: 1/2;
@@ -331,7 +336,7 @@ footer {
     font-family: "Poppins";
     font-weight: 200;
     align-self: flex-start;
-    padding: 5px;
+    padding: 15px;
 }
 
 .copyright{
