@@ -23,6 +23,10 @@ header {
     padding: 0px 10px 0px 10px;
 
 }
+.navbar-list-item-selected {
+    padding: 0px 10px 0px 10px;
+
+}
 
 .navbar-list-item-logo {
     padding: 0px 10px 0px 10px;
@@ -30,6 +34,7 @@ header {
     color: #cd853f;
     font-size: 20px;
     float: left;
+    margin-right: 10px;
 }
 
 .navbar-list-item a {
@@ -39,6 +44,17 @@ header {
     color: white;
     display: block;
     float: left;
+
+}
+.navbar-list-item-selected a{
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    font-family: "poppins";
+    color: #fff;
+    display: block;
+    float: left;
+    background-color: #444444;
+    cursor: default;
 
 }
 
@@ -392,6 +408,16 @@ footer {
         display: block;
         float: none;
         background-color: #191919;
+        margin: 1px;
+
+    }
+    .navbar-list-item-selected a {
+        text-decoration: none;
+        font-family: "poppins";
+        color: white;
+        display: block;
+        float: none;
+        background-color: #444444;
         margin: 1px;
 
     }
