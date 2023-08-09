@@ -78,3 +78,14 @@
 .contact-info{
     width: 50%;
 }
+
+.contact-info-tabel{
+    height: 80%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #444444;
+    font-family: "poppins";
+    color: #fff;
+    padding: 20px;
+}
