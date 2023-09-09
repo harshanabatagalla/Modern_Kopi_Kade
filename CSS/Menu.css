@@ -1,0 +1,125 @@
+.container{
+    margin:10px;
+}
+.menu-headding{
+    color: #cd853f;
+    font-weight: 600;
+    font-family: "poppins";
+    margin:0px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.menu-sub-heading{
+    color: #2f2c28;
+    font-weight: 600;
+    font-family: "poppins";
+    margin:20px 50px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    font-size: 40px;
+    
+}
+.item-container{
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.single-item{
+    height: 280px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */
+    text-align: center;
+
+}
+.menu-img{
+    width:200px;
+    height: 200px;
+    border-bottom:1px solid rgba(0,0,0,.1); ;
+
+}
+
+.menu-item-name{
+    color: #2f2c28;
+    font-weight: 600;
+    font-family: "poppins";
+    font-size: 20px;
+}
+
+.price{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.price-txt{
+    color: #cd853f;
+    font-weight: 600;
+    font-family: "poppins";
+    margin:10px;
+}
+
+.cart{
+    height: 20px;
+    width: 20px;
+}
+
+@media screen and (max-width:520px){
+    
+    .item-container{
+        margin: 10px;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .menu-sub-heading{
+        margin:20px 20px;
+        font-size: 30px;
+        
+    }
+
+    .single-item{
+        height: 150px;
+        width: 130px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .menu-img{
+        width:100px;
+        height: 100px;
+        border-bottom:1px solid rgba(0,0,0,.1); ;
+    
+    }
+    
+    .menu-item-name{
+        font-weight: 600;
+        font-family: "poppins";
+        font-size: 12px;
+    }
+    
+    .price{
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0px 5px;
+    }
+    
+    .price-txt{
+        color: #cd853f;
+        font-weight: 600;
+        font-family: "poppins";
+        margin:5px;
+        font-size: 12px;
+    }
+    
+    .cart{
+        height: 20px;
+        width: 20px;
+    }
+}
